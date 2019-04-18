@@ -22,7 +22,7 @@ n = 24  # PCA降维
 k = 800  # KMeans训练的聚类中心数量，之后映射到数字即可
 
 # PCA降维
-pca = PCA(n_components=49)
+pca = PCA(n_components=n)
 reduced_train_images = pca.fit_transform(train_images)
 print(len(reduced_train_images), len(reduced_train_images[0]),
       pca.n_components_)
